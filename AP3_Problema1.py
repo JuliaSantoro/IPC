@@ -1,6 +1,6 @@
 salario = float(input("Digite o valor do salário: "))
 
-def novo_salario (salario):
+def pagamento (salario):
     if salario <= 280.00:
         aumento = salario * 0.20
     elif salario <= 700.00:
