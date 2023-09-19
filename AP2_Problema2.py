@@ -1,17 +1,12 @@
 vel_maxima = float(input("Digite o valor da velocidade máxima: "))
 vel_registrada = float(input("Digite o valor da velocidade registrada: "))
+resultado = velocidade_registrada - velocidade_maxima
 
-del multa (vel_registrada, vel_maxima): 
- 
-  if vel_registrada <= vel_maxima:
-       multa == "Sem infração"
-  elif vel_registrada > vel_maxima, vel_registrada <= (1.2 * vel_maxima)
-       multa == "Infração média"
-  elif vel_registrada > 1.2 * vel_maxima, vel_registrada < 1.5 * vel_maxima
-       multa == "Infração grave"
-  elif vel_registrada >= 1.5 * vel_maxima
-       multa == "Infração Gravíssima"
-
-return multa 
-
-print(f"Multa : {multa})
+if resultado <= 0:
+    print("Sem Infração")
+elif resultado <= 0.2 * velocidade_maxima:
+    print("Infração Média")
+elif resultado <= 0.5 * velocidade_maxima:
+    print("Infração Grave")
+else:
+    print("Infração Gravíssima") 
