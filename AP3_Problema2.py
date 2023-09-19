@@ -1,3 +1,6 @@
+valor_hora = float(input("Digite o valor da hora trabalhada: "))
+horas_trabalhadas = float(input("Digite a quantidade de horas trabalhadas: "))
+
 def pagamento(valor_hora, horas_trabalhadas):
     salario_bruto = valor_hora * horas_trabalhadas
 
@@ -13,9 +16,6 @@ def pagamento(valor_hora, horas_trabalhadas):
     salario_liquido = salario_bruto - desconto_ir
     return salario_bruto, desconto_ir, salario_liquido
 
-# Exemplos de uso da função
-valor_hora = float(input("Digite o valor da hora trabalhada: "))
-horas_trabalhadas = float(input("Digite a quantidade de horas trabalhadas: "))
 
 salario_bruto, desconto_ir, salario_liquido = pagamento(valor_hora, horas_trabalhadas)
 
