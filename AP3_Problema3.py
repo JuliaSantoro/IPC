@@ -1,5 +1,9 @@
+lado1 = float(input("Digite o valor do primeiro lado: "))
+lado2 = float(input("Digite o valor do segundo lado: "))
+lado3 = float(input("Digite o valor do terceiro lado: "))
+
+
 def verifica_triangulo(x, y, z):
-    # Verifica a desigualdade triangular
     if x < y + z and y < x + z and z < x + y:
         return True
     else:
@@ -12,11 +16,6 @@ def tipo_triangulo(x, y, z):
         return "Isósceles"
     else:
         return "Escaleno"
-
-# Exemplos de uso das funções
-lado1 = float(input("Digite o valor do primeiro lado: "))
-lado2 = float(input("Digite o valor do segundo lado: "))
-lado3 = float(input("Digite o valor do terceiro lado: "))
 
 if verifica_triangulo(lado1, lado2, lado3):
     tipo = tipo_triangulo(lado1, lado2, lado3)
