@@ -1,6 +1,6 @@
-lado1 = float(input("Digite o valor do primeiro lado: "))
-lado2 = float(input("Digite o valor do segundo lado: "))
-lado3 = float(input("Digite o valor do terceiro lado: "))
+x = float(input("Digite o valor do primeiro lado: "))
+y = float(input("Digite o valor do segundo lado: "))
+z = float(input("Digite o valor do terceiro lado: "))
 
 
 def eh_triangulo(x, y, z):
