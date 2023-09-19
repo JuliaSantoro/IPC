@@ -1,7 +1,7 @@
 hora = float(input("Digite o valor da hora trabalhada: "))
 horas_traba = float(input("Digite a quantidade de horas trabalhadas: "))
 
-def pagamento (hora, horas_trab):
+def pagamento(hora, horas_trab):
     salario_bruto = hora * horas_traba
 
     if salario_bruto <= 900.00:
@@ -15,9 +15,6 @@ def pagamento (hora, horas_trab):
 
     salario_liquido = salario_bruto - desconto
     return salario_bruto, desconto, salario_liquido
-
-
-salario_bruto, desconto, salario_liquido = pagamento(valor_hora, horas_trabalhadas)
 
 print(f"Salário bruto: {salario_bruto:.2f}")
 print(f"Desconto: {desconto_ir:.2f}")
