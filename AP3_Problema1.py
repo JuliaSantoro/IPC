@@ -1,6 +1,6 @@
-
 salario = float(input("Digite o valor do salário: "))
-def pagamento(salario_atual):
+
+def mudanca(salario_atual):
     if salario_atual <= 280.00:
         aumento = salario_atual * 0.20
     elif salario_atual <= 700.00:
@@ -13,7 +13,7 @@ def pagamento(salario_atual):
     novo_salario = salario_atual + aumento
     return novo_salario
 
-novo_salario = pagamento(salario)
+novo_salario = mudanca(salario)
 
 print(f"Valor do aumento: {novo_salario - salario:.2f}")
 print(f"Novo salário: {novo_salario:.2f}")
