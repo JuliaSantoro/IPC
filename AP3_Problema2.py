@@ -1,7 +1,5 @@
 def pagamento(valor_hora, horas_trabalhadas):
-    hora = float(valor_hora)
-    trabalho = float(horas_trabalhadas)
-    salario_bruto = hora * trabalhado
+    salario_bruto = valor_hora * horas_trabalhadas
     
     if salario_bruto <= 900:
         desconto_ir = 0
@@ -14,7 +12,11 @@ def pagamento(valor_hora, horas_trabalhadas):
     
     desconto = (salario_bruto * desconto_ir) / 100
     salario_liquido = salario_bruto - desconto
-   return salario_liquido, desconto
-
+    
+    print("Salário bruto: {:.2f}".format(salario_bruto))
+    print("Desconto: {:.2f}".format(desconto))
+    print("Salário líquido: {:.2f}".format(salario_liquido))
+    return salario_liquido
+    
 
    
