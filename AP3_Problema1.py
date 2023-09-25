@@ -1,14 +1,14 @@
 def pagamento(salario_atual):
     if salario_atual <= 280.00:
-        aumento = 1.20
+        aumento = 0.20
     elif salario_atual <= 700.00:
-        aumento = 1.15
+        aumento = 0.15
     elif salario_atual <= 1500.00:
-        aumento = 1.10
+        aumento = 0.10
     else:
-        aumento = 1.05
+        aumento = 0.05
 
-    novo_salario = salario_atual * aumento
+    novo_salario = (salario_atual * aumento) + salario_atual
     return novo_salario
 
 
