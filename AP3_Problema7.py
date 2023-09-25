@@ -6,11 +6,10 @@ def operacao(valor1, valor2, simbolo):
     elif simbolo == "*":
         resultado = valor1 * valor2
     elif simbolo == "/":
-        if valor2 != 0:  # Verifica se o divisor não é zero
-            resultado = valor1 / valor2
-        else:
-            return "Erro: divisão por zero"
+        if valor2 == 0:
+            raise ValueError("Não é possível dividir por zero.")
+        resultado = valor1 / valor2
     else:
-        return "Operação não reconhecida"
-    
+        raise ValueError("Símbolo de operação inválido. Use '+', '-', '*', ou '/'.")
+
     return resultado
