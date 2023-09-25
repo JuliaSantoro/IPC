@@ -11,8 +11,5 @@ def pagamento(salario_atual):
     novo_salario = salario_atual * aumento
     return novo_salario
 
-salario = float(input("Digite o valor do salário: "))
-novo_salario = pagamento(salario)
 
-print(f"Valor do aumento: {novo_salario - salario:.2f}")
-print(f"Novo salário: {novo_salario:.2f}")
+
