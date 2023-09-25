@@ -1,9 +1,9 @@
-def media(nota1, nota2, nota3, letra):
-    if letra == "A":
+def media(nota1, nota2, nota3, tipo_media):
+    if tipo_media == "A":
         media_aritmetica = (nota1 + nota2 + nota3) / 3
         return media_aritmetica
-    elif letra == "P":
-        media_ponderada = (nota1 * 5 + nota2 * 3 + nota3 * 2) / (5 + 3 + 2)
+    elif tipo_media == "P":
+        media_ponderada = (nota1 * 5 + nota2 * 3 + nota3 * 2) / 10
         return media_ponderada
     else:
-        return None  
+        raise ValueError("Tipo de média inválido. Use 'A' para média aritmética ou 'P' para média ponderada.")
