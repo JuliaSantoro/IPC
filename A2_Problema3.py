@@ -21,9 +21,7 @@ FGTS = (salario * 0,11)
 
 desconto = IR + INSS
 
-print("Total de descontos: %.2f " % (desconto)
-      
-print("Salário líquido: %.2f " % (salario - desconto)
+print("Salário Bruto: R$%.2f \nIR: %f \nINSS: %.2f\nFGTS: %.2F Total de descontos: %.2f \nSalário líquido: %.2f " % (salario, IR, INSS, FGTS, salario - desconto)
       
       
 
