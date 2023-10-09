@@ -23,6 +23,9 @@ desconto = IR + INSS
 
 print("Total de descontos: %.2f " % (desconto)
       
+print("Salário líquido: %.2f " % (salario - desconto)
+      
+      
 
 
 
